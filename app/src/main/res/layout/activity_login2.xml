@@ -19,5 +19,12 @@
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="teo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
