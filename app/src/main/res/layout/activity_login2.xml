@@ -22,9 +22,32 @@
 
         <TextView
             android:id="@+id/textView3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="teo"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textAlignment="textStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
