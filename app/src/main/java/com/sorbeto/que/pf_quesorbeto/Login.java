@@ -24,7 +24,7 @@ public class Login extends AppCompatActivity {
                 String password = ((EditText)findViewById(R.id.txtPassword)).getText().toString();
                 if (!correo.equals("") && !password.equals(""))
                 {
-                    Intent llamaprueba = new Intent(getApplicationContext(), Prueba.class);
+                    Intent llamaprueba = new Intent(getApplicationContext(), MenuActivity.class);
                     //Le agregamos un "Extra"
                     llamaprueba.putExtra("username", correo);
                     llamaprueba.putExtra( "password" , password);
