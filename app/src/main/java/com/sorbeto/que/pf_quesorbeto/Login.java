@@ -7,14 +7,19 @@ import android.view.ActionMode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 import android.widget.Toast;
 
+import classes.DataBase;
+
 public class Login extends AppCompatActivity {
+    DataBase myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
+        myDb = new DataBase(this);
 
         Button ingresaboton = (Button) findViewById(R.id.Ingresar);
         ingresaboton.setOnClickListener(new View.OnClickListener() {
