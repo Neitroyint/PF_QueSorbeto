@@ -7,14 +7,19 @@ import android.view.ActionMode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
 import android.widget.Toast;
 
+import classes.DataBase;
+
 public class Login extends AppCompatActivity {
+    DataBase myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2);
+        myDb = new DataBase(this);
 
         Button ingresaboton = (Button) findViewById(R.id.Ingresar);
         ingresaboton.setOnClickListener(new View.OnClickListener() {
@@ -24,7 +29,7 @@ public class Login extends AppCompatActivity {
                 String password = ((EditText)findViewById(R.id.txtPassword)).getText().toString();
                 if (!correo.equals("") && !password.equals(""))
                 {
-                    Intent llamaprueba = new Intent(getApplicationContext(), Prueba.class);
+                    Intent llamaprueba = new Intent(getApplicationContext(), MenuActivity.class);
                     //Le agregamos un "Extra"
                     llamaprueba.putExtra("username", correo);
                     llamaprueba.putExtra( "password" , password);
