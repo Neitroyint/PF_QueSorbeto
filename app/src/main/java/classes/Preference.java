@@ -37,7 +37,7 @@ public class Preference {
         return o;
     }
     private void UpdatePreferences(){
-        preferences = context.getSharedPreferences("com.sorbeto.que.pf_quesorbeto", Context.MODE_PRIVATE);
+        preferences = context.getSharedPreferences("pf_quesorbeto", context.MODE_PRIVATE);
         editor = preferences.edit();
     }
 }
